@@ -19,7 +19,7 @@ public class Main {
         }
         List<Map.Entry<String, Integer>> sorted = Sorter.sort(wordsInFile);
         Duration duration = Duration.between(start, LocalDateTime.now());
-        sorted.forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
+        sorted.subList(0,9).forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
         System.out.printf("execution time: %s ms", duration.toMillis());
     }
 
