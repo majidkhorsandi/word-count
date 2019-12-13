@@ -12,7 +12,7 @@ public class Main {
         Map<String, Integer> wordsInFile;
         LocalDateTime start = LocalDateTime.now();
         try {
-            wordsInFile = counter.countWordsInFile("/Users/majid/code/word-count/src/main/resources/words.txt");
+            wordsInFile = counter.countWordsInFile("/Users/majid/code/word-count/src/main/resources/big.txt");
         } catch (IOException e) {
             e.printStackTrace();
             return;
